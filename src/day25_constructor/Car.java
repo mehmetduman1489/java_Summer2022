@@ -13,7 +13,7 @@ public class Car {
     String marka="Marka belirtilmedi";
     String model="Model belirtilmedi";
     int yil;
-    int fiyat;
+    public int fiyat;
     public void benzinliArac(){
         System.out.println("Bu arac benzinli motora sahiptir");
     }
