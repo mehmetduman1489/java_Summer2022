@@ -22,5 +22,6 @@ public class C04_ArrayOlustur {
             olusturulan[i] = scan.nextInt();
         }
         return olusturulan;
+
     }
 }
