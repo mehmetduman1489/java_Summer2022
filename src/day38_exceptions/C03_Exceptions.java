@@ -1,6 +1,5 @@
 package day38_exceptions;
 
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class C03_Exceptions {
@@ -13,14 +12,18 @@ public class C03_Exceptions {
           exception vermesinin onune gecelim
          */
         String[] urunler={"Nutella","Cokokrem","Sut","Cay","Findik"};
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Istediginiz urunun sira nosunu giriniz");
+        Scanner scan;
         int istenenSira=0;
-        try {
-            istenenSira =scan.nextInt();
-        } catch (InputMismatchException deneme) {
-            System.out.println("Urun indexi icin bir tam sayi girmeniz gerekli");
-            System.out.println(deneme);
+        boolean kontrol=true;
+        while(kontrol){
+            try {
+                scan= new Scanner(System.in);
+                System.out.println("Istediginiz urunun sira nosunu giriniz");
+                istenenSira =scan.nextInt();
+                kontrol=false;
+            } catch (InputMismatchException deneme) {
+                System.out.println("Urun indexi icin bir tam sayi girmeniz gerekli");
+            }
         }
         /*
          catch blogunun onundeki parantezde
@@ -40,4 +43,3 @@ public class C03_Exceptions {
         }
     }
 }
-
