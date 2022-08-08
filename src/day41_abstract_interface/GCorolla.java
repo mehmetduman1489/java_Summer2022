@@ -1,18 +1,19 @@
 package day41_abstract_interface;
 
-
-public abstract class EToyota extends DAraba{
+public class GCorolla extends EToyota {
     @Override
-    protected void motor() {
-        System.out.println("Toyota arabalar cevreci motor kullanir");
+    protected void yakit() {
+    }
+    @Override
+    protected void kaporta() {
     }
     /*
-     Parent class'daki standart belirleyici method'lar
-     (abstract method)'larin tamami child class tarafindan override edilmelidir.
-     concrete method'larin override edilme mecburiyeti yoktur
-     istersek override edebiliriz, istemezsek etmeyiz
-     Aslinda Toyota class'i da obje uretecegimiz bir class degil
-     bu durumda eger proje tasarimi yapiyorsaniz
-     Toyota class'ini da abstract yapmaniz guzel olur
+      Corolla class'inin 2 tane parent'i var
+      corolla parent'larinin ikisinin de standartlarina (abstract method)
+      uymak zorundadir
+      Concrete bir class parent'i olan tum abstract class'larda
+      abstract olan method'lari implement etmek ZORUNDADIR
+      Ancak Parent silsilesinde override edilerek concrete yapilan method'lari
+      override etmek zorunda DEGILDIR
      */
 }
