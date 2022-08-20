@@ -1,15 +1,23 @@
 package day100_pratik;
 
-public class l {//Herhangi bir döngü kullanmadan 1 den 100e kadar sayıları ekrana yazdıran kodları yazınız
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
-    public static void main(String[] args){
-        //bir tamsayı arrayında ortadaki elemani bulun
-        int [] arr={2,34,55,33,45,67,83,73,63,46,78,99,22,62,67,48,99};
-        System.out.println(arr[(arr.length/2)]);
+public class l {
+
+    public static void main(String[] args) {
 
 
+    }
 
-
-}
-
+    public static Map<Integer, String> mapolustur() {
+        Map<Integer, String> sinifList = new HashMap<>();
+        sinifList.put(101, "Ali, Can, Developer");
+        sinifList.put(102, "Enes, Can, Tester");
+        sinifList.put(103, "Taha, Emre, Java");
+        sinifList.put(104, "Derya, Deniz, Tester");
+        return sinifList;
+    }
 }
